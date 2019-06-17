@@ -13,7 +13,8 @@ yarn add -D @types/express @types/graphql @types/node nodemon ts-node typescript
 ```
 ### tsconfig file
 
-## Register
+## Register 
+
 ### Dependencies
 ```
 yarn add pg typeorm bcryptjs
@@ -22,6 +23,7 @@ yarn add pg typeorm bcryptjs
 ```
 yarn add -D @types/bcryptjs
 ```
+### ormconfig.json
 
 ## Validation
 
