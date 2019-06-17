@@ -1,6 +1,6 @@
 import "reflect-metadata";
 import { ApolloServer } from 'apollo-server-express';
-import * as Express from 'express';
+import express from 'express';
 import { buildSchema, Resolver, Query } from 'type-graphql';
 
 @Resolver()
@@ -19,7 +19,7 @@ const main = async () => {
     
     const apolloServer = new ApolloServer({schema});
 
-    const app = Express();
+    const app = express();
     apolloServer.applyMiddleware({ app });
     const port = 4000;
     app.listen(port, () => {
