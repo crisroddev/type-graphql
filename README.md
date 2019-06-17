@@ -23,7 +23,7 @@ yarn add pg typeorm bcryptjs
 ```
 yarn add -D @types/bcryptjs
 ```
-### ormconfig.json
+### ormconfig.json file
 
 ## Validation
 
