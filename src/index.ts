@@ -5,7 +5,7 @@ import { buildSchema, Resolver, Query } from 'type-graphql';
 
 @Resolver()
 class HelloResolver {
-    @Query(() => String, { name: "helloWorld"})
+    @Query(() => String)
     async hello() {
         return "Hello World"
     }
