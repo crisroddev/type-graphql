@@ -15,19 +15,21 @@ class HelloResolver {
 
 const main = async () => {
     await createConnection();
+  
     const schema = await buildSchema({
-        resolvers: [HelloResolver],
+      resolvers: [HelloResolver]
     });
-    
-    const apolloServer = new ApolloServer({schema});
-
+  
+    const apolloServer = new ApolloServer({ schema });
+  
     const app = express();
+  
     apolloServer.applyMiddleware({ app });
-    const port = 4000;
-    app.listen(port, () => {
-        console.log(`Server Started on http://localhost:${port}/graphql`)
-    })
-
-}
+  
+    app.listen(4000, () => {
+      console.log("server started on http://localhost:4000/graphql");
+    });
+  };
+  
 
 main();
