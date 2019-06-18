@@ -99,6 +99,7 @@ yarn add @types/express-session @types/connect-redis @types/ioredis @types/cors
 ```
 context: ({ req }: any ) => ({ req })
 ```
+#### Start Redis => redis-server
 #### Add cors
 
 ## Auth
