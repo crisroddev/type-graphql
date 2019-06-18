@@ -77,6 +77,28 @@ yarn add express-session connect-redis ioredis cors
 yarn add @types/express-session @types/connect-redis @types/ioredis @types/cors
 ```
 #### Index.ts add session middleware
+```
+ app.use(
+    session({
+      store: new RedisStore({
+        client: redis as any,
+      }),
+      name: "qid",
+      secret: "hgfsagfsghfsah41341",
+      resave: false,
+      saveUninitialized: false,
+      cookie: {
+        httpOnly: true,
+        secure: process.env.NODE_ENV === "production",
+        maxAge: 1000 * 60 * 60 * 24 * 7 + 365 // 7 years
+      },
+    }  )
+  )
+```
+#### Create context on ApolloServer
+```
+context: ({ req }: any ) => ({ req })
+```
 
 ## Auth
 
