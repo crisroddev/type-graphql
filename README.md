@@ -38,20 +38,22 @@ esModuleInterop: True allowSyntheticDefaultImports: True
 ### Using class-validators on RegisterInput
 #### Create for example an input field
 ```
-@InputType()
+@@InputType()
 export class RegisterInput {
     @Field() 
+    @Length(1, 255)
     firstName: string;
 
+    @Length(1, 255)
     @Field() 
     lastName: string;
 
     @Field() 
+    @IsEmail()
     email: string;
 
     @Field() 
     password: string;
-    
 }
 ```
 #### Using this Input on Register Mutation
