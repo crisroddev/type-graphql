@@ -31,6 +31,10 @@ yarn add -D @types/bcryptjs
 ```
 yarn add ts-node-dev --dev
 ```
+### Adding deorators to tsconfig
+````
+esModuleInterop: True allowSyntheticDefaultImports: True
+```
 
 ## Login
 
