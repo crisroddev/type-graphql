@@ -68,10 +68,15 @@ export class RegisterInput {
 ```
 
 ## Login
-
+### Dependencies
 ```
-
+yarn add express-session connect-redis ioredis cors
 ```
+### Dev Dependencies
+```
+yarn add @types/express-session @types/connect-redis @types/ioredis @types/cors
+```
+#### Index.ts add session middleware
 
 ## Auth
 
