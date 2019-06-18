@@ -27,9 +27,9 @@ yarn add -D @types/bcryptjs
 ### User.ts entity for user table
 
 ## Validation
-
+### Dependencies
 ```
-
+yarn add ts-node-dev --dev
 ```
 
 ## Login
