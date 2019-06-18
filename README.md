@@ -29,11 +29,40 @@ yarn add -D @types/bcryptjs
 ## Validation
 ### Dependencies
 ```
-yarn add ts-node-dev --dev
+yarn add ts-node-dev --dev yarn add class-validator
 ```
-### Adding deorators to tsconfig
-````
+### Adding decorators to tsconfig
+```
 esModuleInterop: True allowSyntheticDefaultImports: True
+```
+### Using class-validators on RegisterInput
+#### Create for example an input field
+```
+@InputType()
+export class RegisterInput {
+    @Field() 
+    firstName: string;
+
+    @Field() 
+    lastName: string;
+
+    @Field() 
+    email: string;
+
+    @Field() 
+    password: string;
+    
+}
+```
+#### Using this Input on Register Mutation
+```
+@Mutation(() => User)
+    async register(
+      @Arg("data") { 
+        email, 
+        firstName, 
+        lastName, 
+        password }: RegisterInput
 ```
 
 ## Login
