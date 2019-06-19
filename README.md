@@ -113,6 +113,9 @@ authChecker: ({ context: { req }}) => {
       return !!req.session.userId;
     }
 ```
+```
+middleware isAuth
+```
 
 ## Confirmation Email
 
