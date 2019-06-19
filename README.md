@@ -140,9 +140,9 @@ yarn add @types/nodemailer @types/uuid
 ### Create Confirmation Resolver
 
 ## Forgot/Change Password
-
+### Forgot password resolver
 ```
-
+ForgotPassword.ts
 ```
 
 ## Logout
