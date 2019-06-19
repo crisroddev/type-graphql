@@ -5,6 +5,7 @@ import { User } from "../../entity/User";
 import { RegisterInput } from "./register/RegisterInput";
 import { isAuth } from "../middleware/isAuth";
 import { logger } from "../middleware/logger";
+import { sendEmail } from "../utils/sendEmail";
   
   @Resolver()
   export class RegisterResolver {
@@ -31,6 +32,8 @@ import { logger } from "../middleware/logger";
         email,
         password: hashedPassword
       }).save();
+
+      await sendEmail(email, )
   
       return user;
     }
