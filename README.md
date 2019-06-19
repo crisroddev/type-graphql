@@ -114,7 +114,10 @@ authChecker: ({ context: { req }}) => {
     }
 ```
 ```
-middleware isAuth
+UseMiddleware() instead of @Authorized
+```
+```
+middleware isAuth middleware logger
 ```
 
 ## Confirmation Email
