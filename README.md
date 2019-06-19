@@ -105,7 +105,7 @@ context: ({ req }: any ) => ({ req })
 ## Auth
 
 ```
-
+@Authorized decorator
 ```
 
 ## Confirmation Email
