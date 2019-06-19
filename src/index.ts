@@ -12,6 +12,7 @@ import { RegisterResolver } from "./modules/user/Register";
 import { redis } from './redis';
 import { LoginResolver } from "./modules/user/Login";
 import { MeResolver } from "./modules/user/Me";
+import { sendEmail } from "./modules/utils/sendEmail";
 
 
 const main = async () => {
@@ -59,6 +60,7 @@ const main = async () => {
   const port = 4000;
 
   app.listen(port, () => {
+    sendEmail();
     console.log(`server started on http://localhost:${port}/graphql`);
   });
 };

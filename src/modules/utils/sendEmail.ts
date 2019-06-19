@@ -21,7 +21,7 @@ export async function sendEmail(){
     html: "<b>Hello world?</b>" // html body
   });
 
-  const info = await transporter.sendEmail(mailOptions);
+  const info = await transporter.sendMail(mailOptions);
 
   console.log("Message sent: %s", info.messageId);
   // Preview only available when sending through an Ethereal account
