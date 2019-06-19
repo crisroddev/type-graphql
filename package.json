@@ -11,6 +11,8 @@
     "@types/cors": "^2.8.5",
     "@types/express-session": "^1.15.12",
     "@types/ioredis": "^4.0.12",
+    "@types/nodemailer": "^6.2.0",
+    "@types/uuid": "^3.4.4",
     "apollo-server-core": "2.4.6",
     "apollo-server-express": "^2.6.3",
     "bcryptjs": "^2.4.3",
@@ -22,10 +24,12 @@
     "express-session": "^1.16.2",
     "graphql": "^14.3.1",
     "ioredis": "^4.10.0",
+    "nodemailer": "^6.2.1",
     "pg": "^7.11.0",
     "reflect-metadata": "^0.1.13",
     "type-graphql": "0.16.0",
-    "typeorm": "^0.2.18"
+    "typeorm": "^0.2.18",
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.2",

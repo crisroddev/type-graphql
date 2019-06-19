@@ -124,8 +124,16 @@ middleware isAuth middleware logger
 ###Using Nodemailer
 ```
 User.ts entity add 
-@Column()
-confirmed: boolean
+@Column("bool", { default: false })
+  confirmed: boolean
+```
+### Dependencies
+```
+yarn add nodemailer uuid
+```
+### Dependencies
+```
+yarn add @types/nodemailer @types/uuid
 ```
 
 ## Forgot/Change Password
