@@ -107,6 +107,12 @@ context: ({ req }: any ) => ({ req })
 ```
 @Authorized decorator
 ```
+```
+Auth Checker
+authChecker: ({ context: { req }}) => {
+      return !!req.session.userId;
+    }
+```
 
 ## Confirmation Email
 
