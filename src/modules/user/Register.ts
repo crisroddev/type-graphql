@@ -1,4 +1,4 @@
-import { Resolver, Query, Mutation, Arg, Authorized, UseMiddleware } from "type-graphql";
+import { Resolver, Query, Mutation, Arg, UseMiddleware } from "type-graphql";
 import * as bcrypt from "bcryptjs";
   
 import { User } from "../../entity/User";
