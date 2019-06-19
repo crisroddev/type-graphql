@@ -137,6 +137,7 @@ yarn add @types/nodemailer @types/uuid
 ```
 ### Using Nodemailer sendEmail.ts
 ### Creating Url for user confirmation createConfirmationUrl.ts
+### Create Confirmation Resolver
 
 ## Forgot/Change Password
 
