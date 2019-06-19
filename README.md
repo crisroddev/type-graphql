@@ -121,9 +121,11 @@ middleware isAuth middleware logger
 ```
 
 ## Confirmation Email
-
+###Using Nodemailer
 ```
-
+User.ts entity add 
+@Column()
+confirmed: boolean
 ```
 
 ## Forgot/Change Password
