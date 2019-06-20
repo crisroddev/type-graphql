@@ -154,7 +154,7 @@ ChangePasswordInput.ts
 ## Logout
 
 ```
-
+Logout.ts Logout Resolver
 ```
 
 ## Testings
