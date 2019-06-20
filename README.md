@@ -156,6 +156,12 @@ ChangePasswordInput.ts
 ```
 Logout.ts Logout Resolver
 ```
+```
+Add to context res
+```
+```
+Clear cookie
+```
 
 ## Testings
 

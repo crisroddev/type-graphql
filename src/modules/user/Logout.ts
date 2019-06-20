@@ -4,14 +4,16 @@ import { MyContext } from "../../types/MyContext";
 @Resolver()
 export class LogoutResolver {
   @Mutation(() => Boolean)
-  async logout(@Ctx() ctx: MyContext): Promise<Boolean> {
+  async logout(@Ctx() context: MyContext): Promise<Boolean> {
     return new Promise((res, rej) =>
-      ctx.req.session!.destroy(err => {
+      context.req.session!.destroy(err => {
         if (err) {
           console.log(err);
-          rej(false);
+          return rej(false);
         }
-        res(true);
+        // Clearing the Login Cookie
+        context.res.clearCookie('qid')
+        return res(true);
       })
     );
   }
