@@ -197,8 +197,7 @@ yarn add faker
 yarn add -D faker @types/faker
 ```
 ## Higher order resolvers
-
 ```
-
+CreateUser.ts
 ```
 
