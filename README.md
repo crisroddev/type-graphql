@@ -184,6 +184,12 @@ Register.test.ts
 ```
 create test db
 ```
+```
+gCall helper
+```
+```
+createSchema.ts
+```
 ## Higher order resolvers
 
 ```
