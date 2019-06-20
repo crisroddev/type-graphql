@@ -178,6 +178,9 @@ yarn ts-jest config:init
 ```
 setup.ts call test connection
 ```
+```
+Register.test.ts
+```
 
 
 ## Higher order resolvers
