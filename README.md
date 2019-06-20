@@ -190,6 +190,12 @@ gCall helper
 ```
 createSchema.ts
 ```
+```
+yarn add faker 
+```
+```
+yarn add -D faker @types/faker
+```
 ## Higher order resolvers
 
 ```
