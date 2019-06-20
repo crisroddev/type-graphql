@@ -181,6 +181,9 @@ setup.ts call test connection
 ```
 Register.test.ts
 ```
+```
+create test db
+```
 
 
 ## Higher order resolvers

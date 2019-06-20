@@ -8,7 +8,7 @@ export const testConn = (drop: boolean = false) => {
     port: 5432,
     username: "test",
     password: "test",
-    database: "graphql_ts",
+    database: "graphql_ts_test",
     synchronize: drop,
     dropSchema: drop,
     entities: [__dirname + "./../entity/*.*"]
