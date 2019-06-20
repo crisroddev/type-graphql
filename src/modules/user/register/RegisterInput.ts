@@ -1,5 +1,5 @@
 import { PasswordInput } from './../../shared/PasswordInput';
-import { Length, IsEmail, Min } from "class-validator";
+import { Length, IsEmail } from "class-validator";
 import { InputType, Field } from "type-graphql";
 import { IsEmailAlreadyExist } from "./IsEmailAlreadyExists";
 
