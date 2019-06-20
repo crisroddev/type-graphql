@@ -160,14 +160,22 @@ Logout.ts Logout Resolver
 Add to context res
 ```
 ```
-Clear cookie
+Clear cookie context.res.clearCookie('qid')
 ```
 
 ## Testings
 
 ```
-
+Setting un test enviroment with jest
 ```
+```
+yarn add --dev jest typescript ts-jest @types/jest
+```
+### Start config file
+```
+yarn ts-jest config:init
+```
+
 
 ## Higher order resolvers
 
