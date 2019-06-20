@@ -11,6 +11,6 @@ export const testConn = (drop: boolean = false) => {
     database: "graphql_ts",
     synchronize: drop,
     dropSchema: drop,
-    entities: ["src/entity/*.*"]
+    entities: [__dirname + "./../entity/*.*"]
   });
 };
