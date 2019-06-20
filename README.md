@@ -144,6 +144,12 @@ yarn add @types/nodemailer @types/uuid
 ```
 ForgotPassword.ts
 ```
+```
+ChangePassword.ts
+```
+```
+ChangePasswordInput.ts
+```
 
 ## Logout
 

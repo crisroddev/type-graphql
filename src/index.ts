@@ -3,6 +3,7 @@ import { ForgotPasswordResolver } from './modules/user/ForgotPassword';
 import { ConfirmUserResolver } from './modules/user/ConfirmUser';
 import { MeResolver } from './modules/user/Me';
 import { RegisterResolver } from './modules/user/Register';
+import { ChangePasswordResolver } from './modules/user/ChangePassword';
 
 import "reflect-metadata";
 import { ApolloServer } from "apollo-server-express";
@@ -17,11 +18,19 @@ import { redis } from './redis';
 
 
 
+
 const main = async () => {
   await createConnection();
   
   const schema = await buildSchema({
-    resolvers: [ConfirmUserResolver, ForgotPasswordResolver, LoginResolver, MeResolver, RegisterResolver],
+    resolvers: [
+      ConfirmUserResolver, 
+      ForgotPasswordResolver, 
+      LoginResolver, 
+      MeResolver, 
+      RegisterResolver,
+      ChangePasswordResolver
+    ],
     authChecker: ({ context: { req } }) => {
       return !!req.session.userId;
     }
