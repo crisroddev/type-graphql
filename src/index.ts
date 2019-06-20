@@ -1,3 +1,4 @@
+import { LogoutResolver } from './modules/user/Logout';
 import { LoginResolver } from './modules/user/Login';
 import { ForgotPasswordResolver } from './modules/user/ForgotPassword';
 import { ConfirmUserResolver } from './modules/user/ConfirmUser';
@@ -29,7 +30,8 @@ const main = async () => {
       LoginResolver, 
       MeResolver, 
       RegisterResolver,
-      ChangePasswordResolver
+      ChangePasswordResolver,
+      LogoutResolver
     ],
     authChecker: ({ context: { req } }) => {
       return !!req.session.userId;
