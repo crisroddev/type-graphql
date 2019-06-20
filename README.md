@@ -184,8 +184,6 @@ Register.test.ts
 ```
 create test db
 ```
-
-
 ## Higher order resolvers
 
 ```
